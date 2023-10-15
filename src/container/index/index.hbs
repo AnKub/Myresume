@@ -1,13 +1,156 @@
-{{!
-Це код container файлу для index сторінки,
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
-}}
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<div class="resume-wrapper">
+    <section class="profile section-padding">
+        <div class="container">
+            <div class="picture-resume-wrapper">
+                <div class="picture-resume">
+                    <span><img src="/img/aa.jpg" alt="" /></span>
+                    <svg version="1.1" viewBox="0 0 350 350">
 
-<main>
-	{{>heading title="Index" info=data.test}}
-</main>
+                        <defs>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+                                <feColorMatrix in="blur" mode="matrix"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -9" result="cm" />
+                            </filter>
+                        </defs>
 
-{{!
-    Цей код містить лише те, що буде виводитись в <body>
-    Адже наш layout/default.hbs має вже структуру HTML
-}}
+
+                        <g filter="url(#goo)">
+
+                            <circle id="main_circle" class="st0" cx="171.5" cy="175.6" r="130" />
+
+                            <circle id="circle" class="bubble0 st1" cx="171.5" cy="175.6" r="130.7" />
+                            <circle id="circle" class="bubble1 st1" cx="171.5" cy="175.6" r="130.7" />
+                            <circle id="circle" class="bubble2 st1" cx="171.5" cy="175.6" r="130.7" />
+                            <circle id="circle" class="bubble3 st1" cx="171.5" cy="175.6" r="130.7" />
+                            <circle id="circle" class="bubble4 st1" cx="171.5" cy="175.6" r="130.7" />
+                            <circle id="circle" class="bubble5 st1" cx="171.5" cy="175.6" r="130.7" />
+                            <circle id="circle" class="bubble6 st1" cx="171.5" cy="175.6" r="130.7" />
+                            <circle id="circle" class="bubble7 st1" cx="171.5" cy="175.6" r="130.7" />
+                            <circle id="circle" class="bubble8 st1" cx="171.5" cy="175.6" r="130.7" />
+                            <circle id="circle" class="bubble9 st1" cx="171.5" cy="175.6" r="130.7" />
+                            <circle id="circle" class="bubble10 st1" cx="171.5" cy="175.6" r="130.7" />
+
+                        </g>
+                    </svg>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="name-wrapper">
+                <h1>Andrey<br />Kulik</h1>
+            </div>
+            <div class="clearfix"></div>
+            <div class="contact-info clearfix">
+                <ul class="list-titles">
+                    <li>Call</li>
+                    <li>Mail</li>
+                    <li>Web</li>
+                    <li>Home</li>
+                </ul>
+                <ul class="list-content ">
+                    <li>+8 066 4999010</li>
+                    <li>ankub3088@gmail.com</li>
+                    <li><a href="#"> ankub3088@gmail.com </a></li>
+                    <li>Khmelnitsky, Ukraine</li>
+                </ul>
+            </div>
+            <div class="contact-presentation">
+                <p><span class="bold">Full-Stack developer.</span>Relatively recently I began to be interested in IT (2
+                    years+), now I can’t imagine an alternative.</p>
+            </div>
+            <div class="contact-social clearfix">
+                <ul class="list-titles">
+                    <li>Instagram</li>
+                    <li>Instagram/work</li>
+                    <li>GitHub</li>
+                </ul>
+                <ul class="list-content">
+                    <li><a href="">@dualitas1011</a></li>
+                    <li><a href="">@center_kubik</a></li>
+                    <li><a href="">https://github.com/AnKub</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="experience section-padding">
+        <div class="container">
+            <h3 class="experience-title">Experience</h3>
+
+            <div class="experience-wrapper">
+                <div class="company-wrapper clearfix">
+                    <div class="experience-title">IT-Brains course Full-Stack developer</div>
+                    <div class="time">Mart 2023 - Jan 2024</div> <!-- THE TIME YOU WORK WITH THE COMPANY  -->
+                </div>
+
+                <div class="job-wrapper clearfix">
+                    <div class="experience-title">Full-Stack developer</div> <!-- JOB TITLE  -->
+                    <div class="company-description">
+                        <p>During his studies, he mastered the creation of efficient and user-friendly interfaces using
+                            HTML, CSS, and JavaScript frameworks.
+                            I am an expert in developing RESTful APIs using various technologies such as Node.js,
+                            Express, Django.
+                            <hr>
+                            I have experience with various databases such as MongoDB, MySQL, PostgreSQL to ensure
+                            efficient data storage.
+                            I am able to work with shared repositories using Git and GitHub for version and code
+                            management.
+                            <hr>
+                            I have knowledge of various architectural patterns and OOP principles to create flexible and
+                            scalable applications.
+                            I have experience developing single page applications (SPA) using frameworks such as React
+                            or Angular.
+                            <hr>
+                            I am familiar with build and automation tools such as Webpack, Gulp, or Grunt.
+                            I have testing skills such as unit and integration testing to ensure code quality.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="experience-title">Education</h3>
+                <div class="company-wrapper clearfix">
+                    <div class="experience-title">National Academy of the State Border Guard Service of Ukraine</div>
+                    <div class="time">2006-2010</div>
+                </div>
+
+                <div class="company-wrapper clearfix">
+                    <div class="experience-title">Master of Laws: Bohun Law University Chernihiv</div>
+                    <div class="time">2016-2017 <br>(with honors)</div>
+                </div>
+
+                <div class="company-wrapper clearfix">
+                    <div class="experience-title">Master in Psychology:IAPM (psychology) Uzhgorod</div>
+                    <div class="time">2021-2023</div>
+                </div>
+
+            </div><!--Skill experience-->
+
+            <div class="section-wrapper clearfix">
+                <h3 class="section-title">Skills</h3> <!-- YOUR SET OF SKILLS  -->
+                <ul>
+                    <li class="skill-percentage">HTML / HTML5/ + Bootstrap, Handlebars etc</li>
+                    <li class="skill-percentage">CSS / CSS3 / SASS/</li>
+                    <li class="skill-percentage">JS (JSON, CRUD and etc.)</li>
+                    <li class="skill-percentage">React (router and etc,redux-toolkit,SWR)</li>
+                    <li class="skill-percentage">TS (jets)</li>
+                    <li class="skill-percentage">Mongodb</li>
+
+                </ul>
+
+            </div>
+
+            <div class="section-wrapper clearfix">
+                <h3 class="section-title">Hobbies</h3> <!-- DESCRIPTION OF YOUR HOBBIES -->
+                <p>Extreme sports: skiing or rollerblading. Martial arts (wrestling)</p>
+                <p>Anything that requires creative inclusion, creating something with my hands (clay, wood),
+                    drawing (it does not mean that I am good at it).</p>
+                <p>Reading: science pop, profile psychology (social), fiction and non-fiction.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="clearfix"></div>
+</div>
